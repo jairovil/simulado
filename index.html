@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Simulado Interativo</h1>
+            <p>Teste seus conhecimentos! Cada simulado tem 5 questões aleatórias.</p>
+            <div class="stats">
+                <span>📊 Questões disponíveis: <span id="total-questoes">0</span></span>
+                <span>✅ Questões já respondidas: <span id="respondidas">0</span></span>
+                <span>🔄 Questões restantes: <span id="restantes">0</span></span>
+            </div>
+        </header>
+
+        <main>
+            <div id="simulado-container">
+                <div class="info-card" id="info-card">
+                    <h2>Bem-vindo ao Simulado!</h2>
+                    <p>Clique no botão abaixo para iniciar um novo simulado com 5 questões.</p>
+                    <p>Cada questão será sorteada aleatoriamente, e o sistema controla quais questões já foram usadas para que todas tenham a mesma chance ao longo do tempo.</p>
+                    <button id="iniciar-simulado" class="btn-primary">🎯 Iniciar Simulado</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Simulado - Todas as questões são revisadas e atualizadas periodicamente.</p>
+        </footer>
+    </div>
+
+    <script src="questoes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
